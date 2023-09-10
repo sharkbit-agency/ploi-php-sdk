@@ -71,7 +71,8 @@ class Site extends Resource
         string $systemUser = 'ploi',
         string $systemUserPassword = null,
         string $webserverTemplate = null,
-        string $projectType = null
+        string $projectType = null,
+        string $webhookURL = null
     ): Response {
 
         // Remove the id
@@ -86,7 +87,8 @@ class Site extends Resource
                 'system_user' => $systemUser,
                 'system_user_password' => $systemUserPassword,
                 'webserver_template' => $webserverTemplate,
-                'project_type' => $projectType
+                'project_type' => $projectType,
+                'webhook_url' =>  $webhookURL                 
             ]),
         ];
 
